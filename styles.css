@@ -1,0 +1,254 @@
+body,html {
+	margin: 0;
+	padding: 0;
+	font-family: "Source Sans 3", sans-serif;
+}
+
+.top-section-wraper {
+	background-color: #001D37;
+	overflow: hidden;
+}
+
+.top-section {
+	color: white;
+	padding-left: 30px;
+	padding-top: 139px;
+	padding-bottom: 139px;
+	max-width: 1066px;
+	margin: 0 auto;
+	position: relative;
+} 
+
+.top-section h1 {
+	font-size: 6.25rem;
+	margin: 0;
+	line-height: 97.3%;
+	max-width: 535px;
+}
+
+
+.top-section p {
+	font-size: 1.25rem;
+	line-height: 169.3%; 
+	margin: 1rem 0;
+	max-width: 435px;
+}
+
+
+.our-btn {
+	display: inline-block;
+	font-size: 1.125rem;
+	font-family: sans-serif;
+	background-color: #475AFF;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 13px 25px;
+	border-radius: 100px;
+	font-weight: 700;
+	border: 2px solid #475AFF;
+	transition: background .3s ease-out, border .3s ease-out, color .3s ease-out;
+}
+
+.our-btn:hover {
+	border: 2px solid #002AF0;
+	background-color: #002AF0;
+}
+
+.our-btn--outline {
+	background-color: transparent;
+	border: 2px solid white;
+}
+.our-btn--outline:hover {
+	background-color: white;
+	border: 2px solid white;
+	color: #475AFF;
+}
+.ultity-mr {
+	margin-right: 10px;
+}
+.intro-buttons {
+	margin-bottom: 10px;
+}
+
+
+.intro-feu {
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	border-radius: 5px;
+	padding: 10px;
+
+}
+
+.intro-feu p{
+	margin: 10;
+	font-size: 1.0625rem;
+}
+
+
+.intro-feu h2{
+	font-size: 1.5rem;
+	margin: 31px 0 3px 0;
+}
+.intro-feus {
+	display: grid;
+	column-gap: 16px;
+	row-gap: 16px;
+}
+@media screen and (min-width: 580px) {	
+	.intro-feus {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 16px;
+		}	
+}
+@media screen and (min-width: 900px){	
+	.intro-feus {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		}	
+}
+
+.circle {
+	width: 617px;
+	height: 617px;
+	background: #D660FF;
+	opacity: 0.85;
+	border-radius: 50%;
+	filter: blur(150px);
+	position: absolute;
+	right: -395px;
+	top: 35px;
+
+}
+.circle-two {
+	width: 617px;
+	height: 617px;
+	background: #6079FF;
+	opacity: 0.85;
+	border-radius: 50%;
+	filter: blur(150px);
+	position: absolute;
+	top: -365px;
+	left: -123px;
+}
+
+.actual-top-content {
+	z-index: 2;
+	position: relative;
+}
+
+.page-section {
+	background-color: white;
+	padding: 100px 16px;
+}
+.page-section-inner {
+	max-width: 1066px;
+	margin: 0 auto;
+}
+.page-section-title {
+	font-size: 5.31rem;
+	margin: 0;
+}
+.pet-filter {
+	color: gray;
+	font-size: 1.375rem;
+}
+
+.pet-filter button {
+	background-color: transparent;
+	border: none;
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 1.375rem;
+	color: gray;
+}
+
+.site-footer p {
+	text-align: center;
+	color: gray;
+	font-size: 0.875rem;
+	margin: 0;
+	padding: 0 0 65px 0;
+}
+
+.list-of-pets {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+	column-gap: 34px;
+	row-gap: 16px;
+	
+}
+
+.pet-card {
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 165px 1fr;
+	border: 1px solid white;
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+	border-radius: 20px;
+	
+}
+
+.pet-card-photo {
+	order: 1;
+	grid-row: 1;
+}
+
+.pet-card-photo img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.pet-card-text {
+	padding: 18px 16px;
+}
+.pet-card-text h3 {
+	margin: 0;
+	font-size: 1.625rem;
+	font-weight: 600;
+}
+.pet-description {
+	font-size: .9rem;
+	margin: 0 0 1rem 0;
+	color: #626262;
+	line-height: 150%;
+}
+.pet-age {
+	color: #A2A2A2;
+	font-size: 0.85rem;
+	margin: 10px 1.25rem 0 0;
+}
+
+@media screen and (min-width: 600px) {
+	.top-section h1 {
+		font-size: 6.25rem;
+	}
+	.top-section { 
+		padding: 139px 139px ;
+	}
+	.intro-buttons {
+		margin-bottom: 129px;
+	}
+	.page-section {
+		padding: 130px 16px;
+	}
+	.page-section-title {
+		font-size: 5.31rem;
+	}
+	.pet-filter {
+		color: #9F9F9F;
+		font-size: 1.375rem;
+	}
+	.pet-filter button {
+		font-size: 1.375rem;
+	}
+	.list-of-pets {
+	row-gap: 28px;
+	
+	}
+	.pet-card-text {
+		padding: 21px 29px;
+	}
+	.pet-description {
+		font-size: 1rem;
+	}
+}
