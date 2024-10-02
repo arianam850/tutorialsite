@@ -57,60 +57,34 @@
 			</div>
 		</div>	
 	
-	<div class="page-section">
-		<div class="page-section-inner">
-			<h2 class="page-section-title">Meet Our Friends</h2>
-			<div class="pet-filter">
-				<p>Show me: <button>All pets</button> <button>Only Dogs</button><button>Only Cats</button></p>
+		<div class="page-section" id="view-pets">
+			<div class="page-section-inner">
+			  <h2 class="page-section-title">Meet Our Friends</h2>
+			  <div class="pet-filter">
+				<p>Show me: <button>All Pets</button> <button>Only Dogs</button> <button>Only Cats</button></p>
+			  </div>
+		
+			  <div class="list-of-pets"></div>
+		
+			  <template id="pet-card-template">
+				<div class="pet-card">
+				  <div class="pet-card-text">
+					<h3></h3>
+					<p class="pet-description">Barksalot is a sweet and lovable 3 year old ball of fluff. He loves carrots,
+					  celery, and playing fetch.</p>
+					<p class="pet-age">2 Years Old</p>
+				  </div>
+				  <div class="pet-card-photo">
+					<img src="images/barksalot.jpg" alt="A white fluffy dog named Barskalot">
+				  </div>
+				</div>
+			  </template>
+		
 			</div>
-			<div class="list-of-pets">
-				<div class="pet-card">
-					<div class="pet-card-text">
-						<h3>Barksalot</h3>
-						<p class="pet-description">Barkalot is a sweet and lovaable 3 yearsold ball of flull. He loves</p>
-						<p class="pet-age">2 Years Old</p>
-					</div>
-					<div class="pet-card-photo">
-						<img src="images/barksalot.jpg" alt="barksalot image">
-					</div>
-				</div>
-				<div class="pet-card">
-					<div class="pet-card-text">
-						<h3>Meowsalot</h3>
-						<p class="pet-description">Meowsalot is the most talkative cat we&#39;ve ever come across. Constant meowing,chirping and purring&#33;</p>
-						<p class="pet-age">1 Year Old</p>
-					</div>
-					<div class="pet-card-photo">
-						<img src="images/meowsalot.jpg" alt="meowalot image">
-					</div>
-				</div>
-				<div class="pet-card">
-					<div class="pet-card-text">
-						<h3>Woof</h3>
-						<p class="pet-description">Barkalot is a sweet and lovaable 3 yearsold ball of flull. He loves</p>
-						<p class="pet-age">Less than a year old</p>
-					</div>
-					<div class="pet-card-photo">
-						<img src="images/woof.jpg" alt="woof image">
-					</div>
-				</div>
-				<div class="pet-card">
-					<div class="pet-card-text">
-						<h3>Purrsloud</h3>
-						<p class="pet-description">Barkalot is a sweet and lovaable 3 yearsold ball of flull. He loves</p>
-						<p class="pet-age">4 Years Old</p>
-					</div>
-					<div class="pet-card-photo">
-						<img src="images/purrsloud.jpg" alt="purrsloud image">
-					</div>
-				</div>
-				<!-- end of pet card-->
-			</div>
-		</div>
-	</div>
+		  </div>
 	<footer class="site-footer">
 		<p>&copy; 2023 Fake Adoption Center. All rights reserved.</p>
 	</footer>
-	<link rel="stylesheet" href="main.js">
-	</body>
+	<script src="main.js"></script>
+</body>
 </html>
